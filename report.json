@@ -1,0 +1,475 @@
+{
+  "parts": {
+    "bound": 13,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "BT1",
+        "C1",
+        "U1",
+        "C2",
+        "R1",
+        "R2",
+        "D1",
+        "R3",
+        "D2",
+        "R4",
+        "D3",
+        "R5",
+        "SW1"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C12624",
+      "C1337190",
+      "C5213768",
+      "C84266"
+    ],
+    "extended_fee_usd": 12.0,
+    "findings": [
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "4 distinct Extended parts, about $12 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 16,
+    "nets": 12,
+    "noConnects": [],
+    "ran": true,
+    "seconds": 0.3
+  },
+  "schematic": {
+    "paper": "A3",
+    "file": "plant_buddy.kicad_sch",
+    "ran": true,
+    "seconds": 0.7
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 0.6
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 12,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "board": {
+    "footprints": 16,
+    "outline_mm": [
+      50.0,
+      134.0
+    ],
+    "stackup": {
+      "copper": 2,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_2layer"
+    },
+    "art": {
+      "items": 20,
+      "shapes": 154,
+      "keepouts": 11,
+      "qr": 1,
+      "by_layer": {
+        "F.Cu": 6,
+        "F.Mask": 6,
+        "F.SilkS": 134,
+        "B.SilkS": 8
+      }
+    },
+    "finish": {
+      "mask": "Green",
+      "silk": "White",
+      "copper": "ENIG"
+    },
+    "ran": true,
+    "seconds": 0.4
+  },
+  "place": {
+    "parts": 16,
+    "log": [
+      "D1 -> (19.50, 30.00) rot 180 : rung 0 lock: left eye; anode (pad 2) toward the face's centre line",
+      "D2 -> (30.50, 30.00) rot 0 : rung 0 lock: right eye; anode toward the centre line",
+      "D3 -> (19.50, 34.30) rot 180 : rung 0 lock: a tear under the left eye",
+      "SW1 -> (25.00, 19.60) rot 0 : rung 0 lock: the bud between the leaves: boop it",
+      "BT1 -> (25.00, 61.00) rot 0 : rung 0 lock: the cell in the belly, - face on the gold disc",
+      "C1 -> (34.00, 74.00) rot 90 : rung 0 lock: reservoir beside the holder's + tab",
+      "U1 -> (25.00, 78.00) rot 0 : rung 0 lock: MCU under the belly",
+      "C2 -> (18.40, 74.40) rot 90 : rung 0 lock: bypass at VCC (pin 1)",
+      "TP1 -> (12.60, 75.00) rot 0 : rung 0 lock: UPDI pads: VCC",
+      "TP2 -> (12.60, 77.54) rot 0 : rung 0 lock: UPDI pads: UPDI",
+      "TP3 -> (12.60, 80.08) rot 0 : rung 0 lock: UPDI pads: GND",
+      "R3 -> (33.60, 78.60) rot 90 : rung 0 lock: eye resistors beside the MCU",
+      "R4 -> (35.40, 78.60) rot 90 : rung 0 lock: ",
+      "R5 -> (37.20, 78.60) rot 90 : rung 0 lock: ",
+      "R1 -> (23.00, 84.60) rot 0 : rung 0 lock: charge resistor at the top of the electrode",
+      "R2 -> (27.00, 84.60) rot 0 : rung 0 lock: sense resistor at the top of the electrode"
+    ],
+    "ran": true,
+    "seconds": 0.1
+  },
+  "route": {
+    "before": 26,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "stats": {
+      "tracks": 104,
+      "vias": 22,
+      "length_mm": 461.8,
+      "length_by_layer_mm": {
+        "B.Cu": 273.3,
+        "F.Cu": 188.5
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 10,
+            "renamed": 0,
+            "nets": 12
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 3.3,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 8,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 104,
+          "vias": 22,
+          "length_mm": 461.8,
+          "length_by_layer_mm": {
+            "B.Cu": 273.3,
+            "F.Cu": 188.5
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 10,
+            "renamed": 0,
+            "nets": 12
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 3.3,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 99,
+          "vias": 22,
+          "length_mm": 485.8,
+          "length_by_layer_mm": {
+            "B.Cu": 206.5,
+            "F.Cu": 279.4
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 22,
+        "seconds": 3.3
+      },
+      "1_nofanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 22,
+        "seconds": 3.3
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": false,
+    "ran": true,
+    "seconds": 9.7
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 0,
+    "gnd_pour_layers": [
+      "B.Cu"
+    ],
+    "stitched": false,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [
+      {
+        "name": "electrode",
+        "net": "PROBE",
+        "layers": [
+          "F.Cu"
+        ],
+        "stitch_vias": 0
+      }
+    ],
+    "stats": {
+      "tracks": 104,
+      "vias": 22,
+      "length_mm": 461.8,
+      "length_by_layer_mm": {
+        "B.Cu": 273.3,
+        "F.Cu": 188.5
+      }
+    },
+    "ran": true,
+    "seconds": 0.4
+  },
+  "silk": {
+    "silk_clipped": 0,
+    "art_obstacles": 142,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 0,
+    "refs_seated": 0,
+    "refs_hidden": 16,
+    "title_offset_mm": [
+      -2.0,
+      0.0
+    ],
+    "title_lines": 2,
+    "stitch_vias_displaced": 0,
+    "ran": true,
+    "seconds": 0.1
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "2f3c36a5501e7c2c841a54cb1ec998d4070d880d2e6ff7c5f4a74c26b5c9f145",
+    "errors": 0,
+    "warnings": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {},
+    "repairs": [],
+    "seconds": 1.1
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_2layer",
+    "copper_layers": 2,
+    "errors": 0,
+    "warnings": 1,
+    "rows": [
+      {
+        "rule": "footprint_silk_width",
+        "severity": "warning",
+        "count": 62,
+        "min_mm": 0.12,
+        "note": "stock footprint silk down to 0.12 mm; the fab prints it at its 0.15 mm minimum"
+      }
+    ],
+    "qr": [
+      {
+        "text": "https://heypcb.ai/world/b/cdb211161e60",
+        "layer": "B.Silkscreen",
+        "module_mm": 0.414,
+        "floor_mm": 0.3,
+        "ok": true
+      }
+    ],
+    "finish": {
+      "mask": "Green",
+      "silk": "White",
+      "copper": "ENIG"
+    }
+  },
+  "fab": {
+    "gerbers": [
+      "plant_buddy-B_Cu.gbl",
+      "plant_buddy-B_Mask.gbs",
+      "plant_buddy-B_Paste.gbp",
+      "plant_buddy-B_Silkscreen.gbo",
+      "plant_buddy-Edge_Cuts.gm1",
+      "plant_buddy-F_Cu.gtl",
+      "plant_buddy-F_Mask.gts",
+      "plant_buddy-F_Paste.gtp",
+      "plant_buddy-F_Silkscreen.gto",
+      "plant_buddy-job.gbrjob"
+    ],
+    "copper_layers": 2,
+    "copper_gerbers": [
+      "plant_buddy-F_Cu.gtl",
+      "plant_buddy-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "plant_buddy-job.gbrjob",
+      "layer_number": 2,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "plant_buddy-F_Cu.gtl",
+        "plant_buddy-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        1.51
+      ],
+      "dielectric": [
+        "FR4"
+      ]
+    },
+    "drill": [
+      "plant_buddy.drl",
+      "plant_buddy-drl_map.gbr"
+    ],
+    "zip": "plant_buddy_gerbers.zip",
+    "pos": "plant_buddy_pos.csv",
+    "cpl": "plant_buddy_cpl_jlc.csv",
+    "cpl_rotations_corrected": 1,
+    "bom": "plant_buddy_bom.csv",
+    "schematic_pdf": "plant_buddy_schematic.pdf",
+    "step": "plant_buddy.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 1.4
+  }
+}

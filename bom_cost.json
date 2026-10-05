@@ -1,0 +1,130 @@
+{
+ "batch": 100,
+ "rows": [
+  {
+   "refs": "BT1",
+   "value": "CR2032",
+   "qty": 1,
+   "lcsc": "C5213768",
+   "mpn": "3034TR",
+   "class": "extended",
+   "unit_usd": 0.3602,
+   "line_usd": 0.3602,
+   "stock": 2321,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "C1",
+   "value": "10uF",
+   "qty": 1,
+   "lcsc": "C15850",
+   "mpn": "CL21A106KAYNNNE",
+   "class": "basic",
+   "unit_usd": 0.0773,
+   "line_usd": 0.0773,
+   "stock": 3505306,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "C2",
+   "value": "100nF",
+   "qty": 1,
+   "lcsc": "C14663",
+   "mpn": "CC0603KRX7R9BB104",
+   "class": "basic",
+   "unit_usd": 0.0106,
+   "line_usd": 0.0106,
+   "stock": 12618106,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "D1,D2",
+   "value": "Green",
+   "qty": 2,
+   "lcsc": "C12624",
+   "mpn": "KT-0603G",
+   "class": "extended",
+   "unit_usd": 0.0122,
+   "line_usd": 0.0244,
+   "stock": 366908,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "D3",
+   "value": "Blue",
+   "qty": 1,
+   "lcsc": "C84266",
+   "mpn": "NCD0603B1",
+   "class": "extended",
+   "unit_usd": 0.017,
+   "line_usd": 0.017,
+   "stock": 456956,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "R1",
+   "value": "1M",
+   "qty": 1,
+   "lcsc": "C22935",
+   "mpn": "0603WAF1004T5E",
+   "class": "basic",
+   "unit_usd": 0.0019,
+   "line_usd": 0.0019,
+   "stock": 2601258,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "R2",
+   "value": "1k",
+   "qty": 1,
+   "lcsc": "C21190",
+   "mpn": "0603WAF1001T5E",
+   "class": "basic",
+   "unit_usd": 0.0039,
+   "line_usd": 0.0039,
+   "stock": 8013731,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "R3,R4,R5",
+   "value": "100",
+   "qty": 3,
+   "lcsc": "C22775",
+   "mpn": "0603WAF1000T5E",
+   "class": "basic",
+   "unit_usd": 0.0023,
+   "line_usd": 0.0069,
+   "stock": 7325193,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "SW1",
+   "value": "TS-1187A",
+   "qty": 1,
+   "lcsc": "C318884",
+   "mpn": "TS-1187A-B-A-B",
+   "class": "basic",
+   "unit_usd": 0.0197,
+   "line_usd": 0.0197,
+   "stock": 1683297,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "U1",
+   "value": "ATtiny412",
+   "qty": 1,
+   "lcsc": "C1337190",
+   "mpn": "ATTINY412-SSNR",
+   "class": "extended",
+   "unit_usd": 0.506,
+   "line_usd": 0.506,
+   "stock": 2638,
+   "read_at": "2026-10-05"
+  }
+ ],
+ "unpriced": [],
+ "parts_usd": 1.028,
+ "extended_parts": 4,
+ "extended_fee_per_board_usd": 0.12,
+ "total_usd": 1.148
+}

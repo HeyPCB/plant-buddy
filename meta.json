@@ -1,0 +1,14 @@
+{
+ "slug": "plant-buddy",
+ "title": "Sprout, the plant buddy",
+ "hook": "A circuit-board sprout that cries a little blue tear when your plant is thirsty.",
+ "intro": "Sprout is a capacitive soil-moisture stake that lives in a plant pot on one CR2032. Its stem carries a mask-covered electrode; an ATtiny412 times how long that electrode takes to charge through 1 MΩ, and wet soil takes several times longer than dry. When the soil dries out, a blue LED tear drips under its left eye; when the plant is fine it winks. Boop the bud between its gold leaves for an instant answer.",
+ "what": [
+  "**Sensor:** a 9 mm-wide electrode down the stem (an F.Cu pour of its own net, under solder mask) over the back's ground plane; no metal touches the soil.",
+  "**MCU:** ATtiny412 (SOIC-8, 1.8-5.5 V), asleep in power-down between 8 s RTC wakes; soil read about once a minute, calibration in EEPROM.",
+  "**Face:** two green 0603 LED eyes, a blue 0603 LED tear, gold blush cheeks, a silk smile; gold leaves with mask-green veins.",
+  "**Button:** the bud (TS-1187A): boop to check, hold 3 s in freshly watered soil to learn wet.",
+  "**Power:** one CR2032 in a Keystone 3034 SMT holder, about two years with a watered plant (SPEC.md).",
+  "**Programming:** three UPDI pads (VCC, UPDI, GND) for any USB-serial adapter."
+ ]
+}
